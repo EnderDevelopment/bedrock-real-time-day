@@ -1,0 +1,32 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Real-Time 24 Hour Day",
+    "description": "Makes one complete Minecraft day and night cycle last 24 real-world hours.",
+    "uuid": "6e0ed3f7-8a24-4e83-9b79-6c52ec3b1db0",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 80]
+  },
+  "modules": [
+    {
+      "description": "Real-time day cycle behavior pack",
+      "type": "data",
+      "uuid": "b7ac1fe2-4e1d-4d0b-b6dc-91c60b2cbf0e",
+      "version": [1, 0, 0]
+    },
+    {
+      "description": "Real-time day cycle server script",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "f8ab629c-3d8e-4d91-a5d6-5ad92eaeb7d4",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.17.0"
+    }
+  ]
+}
